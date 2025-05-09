@@ -205,6 +205,5 @@ public class PolyCafeJframe extends javax.swing.JFrame {
     private javax.swing.JLabel lblPhoto;
     // End of variables declaration//GEN-END:variables
 private void showUserInfo() {
-    if()
 }
 }
