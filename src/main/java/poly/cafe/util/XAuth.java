@@ -8,20 +8,20 @@ import poly.cafe.entity.User;
 
 /**
  *
- * @author admin
+ * @author ASUS
  */
 public class XAuth {
     public static User user = null;
     
-    public static void clear() {
+    public static void clear(){
         XAuth.user = null;
     }
     
-    public static boolean isLogin() {
-        return XAuth.user !=null;
+    public static boolean isLogin(){
+        return XAuth.user !=null;// user khác null thì trả về true
     }
-    
-    public static boolean isManager() {
-        return XAuth.isLogin() && user.isManager();
+    //Kiểm tra user và trưởng phòng hay nhân viên
+    public static boolean isManager(){
+        return XAuth.isLogin()&& user.isManager();
     }
 }
